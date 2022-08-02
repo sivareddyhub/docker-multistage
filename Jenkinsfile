@@ -19,7 +19,7 @@ agent any
         stage('push docker image'){
             steps{
                 script{
-                    withCredentials([string(credentialsId: '86681', variable: 'dockerhubcred')]) {
+                   withCredentials([string(credentialsId: '86681', variable: 'dockerhubcred')]) {
                         sh "docker login -u 86681 -p ${dockerhubcred}"
                         sh "docker tag tomcat:8.0.52 86681/tomcat:8.0.52"
 		    }
