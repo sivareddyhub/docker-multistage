@@ -23,6 +23,7 @@ agent any
                         sh "docker login -u 86681 -p ${dockerhubcred}"
                         sh "docker tag tomcat:8.0.52 86681/tomcat:8.0.52"
 			 sh 'docker push 86681/tomcat:8.0.52 '
+			   sh 'docker run -d --name mytomcat -p 8089:8080 86681/tomcat:8.0.52
 		    }
 		}
 	    }
