@@ -12,7 +12,7 @@ agent any
                 script{
             
                     sh "docker build -t tomcat:8.0.52 ."
-		   sh 'docker run -d --name mytomcat -p 8089:8080 tomcat:8.0.52
+		   sh 'docker run -d --name mytomcat -p 8089:8080 tomcat:8.0.52'
             
                 }
             }
