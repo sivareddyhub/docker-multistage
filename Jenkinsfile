@@ -16,8 +16,9 @@ agent any
   stage("dynamic-deploy"){
             steps{
                 
-            sshagent(['sracred']) {
-	    
+           sshagent(['book']) {
+    // some block
+
 	    
 sh "ansible-playbook tomcat.yml"
                 }
