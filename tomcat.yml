@@ -1,5 +1,5 @@
 ---
-- hosts: instance_type_t2_medium
+- hosts: tag_terra_Terraform
   become: yes
   vars:
     port: 8080
