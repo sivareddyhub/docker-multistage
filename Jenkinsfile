@@ -16,7 +16,7 @@ agent any
   stage("dynamic-deploy"){
 	  steps{
 
-	 sh "ansible-playbook tomcat.yml"
+	 sh "ansible-playbook playbook.yml --extra-vars ansible_ssh_user=ec2-user ansible_ssh_pass=Devops@123"
                 }
             }
   } 
