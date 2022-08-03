@@ -20,7 +20,7 @@ agent any
     // some block
 
 	    
-sh "ansible-playbook tomcat.yml"
+sh "ansible-playbook /root/ansible/inventorytomcat.yml"
                 }
             }
   } 
