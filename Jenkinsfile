@@ -17,12 +17,13 @@ agent any
   stage("dynamic-deploy"){
             steps{
                 script{
-           
+            sshagent(['sracred']) {
+	    
 
 sh "ansible-playbook -i aws_ec2.yaml  tomcat.yml"
                 }
             }
-	    
+	    } 
         }
         
 	}
