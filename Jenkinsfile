@@ -19,7 +19,7 @@ agent any
             sshagent(['sracred']) {
 	    
 	    
-sh "ansible-playbook  tomcat.yml ansible_user=ec2-user "
+sh "ansible-playbook tomcat.yml"
                 }
             }
   } 
