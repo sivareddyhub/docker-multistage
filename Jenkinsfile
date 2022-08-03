@@ -18,7 +18,7 @@ agent any
             steps{
                 script{
             
-sh "ansible-playbook -i /opt/ansible/inventory/aws_ec2.yaml tomcat.yaml"
+sh "ansible-playbook -i /opt/ansible/inventory/aws_ec2.yaml tomcat.yml"
                 }
             }
         }
