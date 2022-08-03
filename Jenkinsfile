@@ -18,12 +18,12 @@ agent any
             steps{
                 script{
             sshagent(['sracred']) {
-    
+	    }
 
 sh "ansible-playbook -i /root/ansible/inventory/aws_ec2.yaml  tomcat.yml"
                 }
             }
-	    }
+	    
         }
         
 	}
