@@ -19,11 +19,11 @@ agent any
                 script{
             sshagent(['sracred']) {
 	    
-
+	    }
 sh "ansible-playbook -i aws_ec2.yaml  tomcat.yml"
                 }
             }
-	    } 
+	    
         }
         
 	}
