@@ -16,7 +16,7 @@ agent any
   stage("dynamic-deploy"){
 	  steps{
 
-	 sh "ansible-playbook opt/ansible/inventory/tomcat.yml"
+	 sh "ansible-playbook /root/opt/ansible/inventory/tomcat.yml"
                 }
             }
   } 
