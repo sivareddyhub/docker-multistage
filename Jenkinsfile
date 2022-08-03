@@ -20,7 +20,7 @@ agent any
             sshagent(['sracred']) {
     
 }
-sh "ansible-playbook -i opt/ansible/inventory/aws_ec2.yaml  tomcat.yml"
+sh "ansible-playbook -i /opt/ansible/inventory/aws_ec2.yaml  tomcat.yml"
                 }
             }
         }
