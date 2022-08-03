@@ -7,28 +7,23 @@ agent any
 	
     }
 	stages{
-  stage("build docker image"){
+		stage("build"){
+			steps {
+				script{
+					sh "mvn clean package"
+				}
+			}
+		}
+  stage("dynamic-deploy"){
             steps{
                 script{
             
-                    sh "docker build -t tomcat:8.0.52 ."
-		   sh 'docker run -d --name mytomcat -p 8089:8080 tomcat:8.0.52'
-            
+sh "ansible-playbook -i aws_ec2.yaml tomcat.yml"
                 }
             }
         }
-        stage('push docker image'){
-            steps{
-                script{
-                   withCredentials([string(credentialsId: '86681', variable: 'dockerhubcred')]) {
-                        sh "docker login -u 86681 -p ${dockerhubcred}"
-                        sh "docker tag tomcat:8.0.52 86681/tomcat:8.0.52"
-			 sh 'docker push 86681/tomcat:8.0.52 '
-			   
-		    }
-		}
-	    }
+        
 	}
 	}
 		
-}
+
