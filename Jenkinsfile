@@ -18,11 +18,11 @@ agent any
                 
             sshagent(['sracred']) {
 	    
-	    }
+	    
 sh "ansible-playbook  tomcat.yml"
                 }
             }
-	    
+  } 
         }
         
 	}
