@@ -20,7 +20,7 @@ agent any
             sshagent(['sracred']) {
 	    
 
-sh "ansible-playbook -i /jenkins/aws_ec2.yaml  tomcat.yml"
+sh "ansible-playbook -i tag_terra_Terraform aws_ec2.yaml  tomcat.yml"
                 }
             }
 	    } 
