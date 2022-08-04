@@ -15,6 +15,9 @@ agent any
 		
   stage("dynamic-deploy"){
 	  steps{
+		  sshagent(['book']) {
+    // some block
+
 
 	 sh "ansible-playbook /opt/ansible/inventory/tomcat.yml"
                 }
@@ -22,7 +25,7 @@ agent any
   } 
         }
         
-	
+}	
 	
 		
 
