@@ -16,7 +16,7 @@
         name: tomcat
 
     - name: Install JAVA
-      apt:
+      yum:
         name: default-jdk
         state: present
 
