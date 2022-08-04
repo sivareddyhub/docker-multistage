@@ -22,11 +22,7 @@ agent any
   stage("dynamic-deploy"){
 	  steps{
 		  sshagent(['keyname']) {
-    
-    
-
-
-	 sh "ansible-playbook -i aws_ec2.yaml tomcat.yml"
+                   sh "ansible-playbook -i aws_ec2.yaml tomcat.yml"
 
                 }
             }
