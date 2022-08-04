@@ -51,7 +51,7 @@
        remote_src: yes
     - name: Copy artifacts from local to remote
       copy:
-        src: /opt/cargo-tracker-1.0-20220710.093159-1.war
+        src: /opt/vtdemo.war
         dest: /opt/tomcat10/webapps
         mode: 0755
         remote_src: yes
