@@ -19,7 +19,7 @@ agent any
     // some block
 
 
-	 sh "ansible-playbook /home/ec2-user/ansible/inventory/tomcat.yml"
+	 sh "ansible-playbook /home/ec2-user/ansible/inventory/aws_ec2.yaml tomcat.yml"
 
                 }
             }
