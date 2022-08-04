@@ -1,6 +1,12 @@
 pipeline{
 agent any
+	environment{
 	
+	AWS_CREDS = credentials('aws-manage')
+	AWS_ACCESS_KEY_ID     = "${env.AWS_CREDS_USR}" 
+	AWS_SECRET_ACCESS_KEY = "${env.AWS_CREDS_PSW}"
+	
+}
 
 	tools {
     	maven 'maven-3.6.3'
