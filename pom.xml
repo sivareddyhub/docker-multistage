@@ -26,7 +26,28 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+     <dependency>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.7</version>
+</dependency>
   </dependencies>
+  
+  <profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+ http://3.110.154.97:8081/
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>  
+  
 
   <build>
     <finalName>vtdemo</finalName>
