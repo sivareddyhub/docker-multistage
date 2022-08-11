@@ -33,9 +33,6 @@
  </snapshotRepository>
 </distributionManagement>
 
-<!-- download artifacts from this repo -->
-<repositories>
-
   <dependencies>
   <dependency>
   <groupId>junit</groupId>
