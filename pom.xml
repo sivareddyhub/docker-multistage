@@ -34,6 +34,12 @@
 </distributionManagement>
 
   <dependencies>
+    <dependency>
+  <groupId>snapshot</groupId>
+  <artifactId>vtdemo</artifactId>
+  <version>1.0</version>
+  <type>war</type>
+</dependency>
   <dependency>
   <groupId>junit</groupId>
    <artifactId>junit</artifactId>
