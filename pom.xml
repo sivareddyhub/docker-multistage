@@ -32,7 +32,12 @@
   <url>http://52.66.152.145:8085/repository/vtdemo-snapshot/</url>
  </snapshotRepository>
 </distributionManagement>
-
+<repositories>
+<repository>
+<id>lti-nexus</id>
+<url>http://13.235.69.177:8085/repository/snap-relea/</url>
+</repository>
+</repositories>
   <dependencies>
     <dependency>
   <groupId>snapshot</groupId>
