@@ -33,20 +33,10 @@
  </snapshotRepository>
 </distributionManagement>
   
-<repositories>
-<repository>
-   <id>lti-nexus</id>
-    <url>http://13.235.69.177:8085/repository/snap-relea/</url>
-</repository>
-</repositories>
+
   
   <dependencies>
-    <dependency>
-  <groupId>snapshot</groupId>
-  <artifactId>vtdemo</artifactId>
-  <version>1.0</version>
-  <type>war</type>
-</dependency>
+   
   <dependency>
   <groupId>junit</groupId>
    <artifactId>junit</artifactId>
